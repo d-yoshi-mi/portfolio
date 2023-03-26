@@ -1,0 +1,719 @@
+* {
+  font-family: UtsukushiMincho;
+}
+
+#header {
+  background-image: url(img/header/first_view.png);
+
+  height: 600px;
+  width: 100%;
+  height: 80vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+
+
+.header-container {
+  position: fixed;
+  width: 100%;
+  height: 80px;
+  left: 0px;
+  /* top: -0.22px; */
+  background: rgba(248, 247, 235, 0.7);
+  z-index: 9999;
+  margin: 0 auto;
+}
+.sp-header-container{
+  display: none;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 1.5% 6%;
+}
+
+
+
+.nav-items {
+  display: flex;
+  /* position: absolute;
+left: 860px;
+top: 24px; */
+}
+
+.nav-item {
+  padding-right: 40px;
+}
+
+.nav-item:last-child {
+  padding-right: 0;
+}
+
+.catch-side{
+  padding: 0 118px;
+}
+.catch-text {
+  /* padding: 1.5% 4%; */
+}
+
+.title {
+  padding: 10% 0 0;
+}
+
+.catch-img {
+  display: flex;
+  justify-content: space-between;
+}
+.sp-catch-title {
+  display: none;
+}
+
+.sp-catch-img{
+  display: none;
+}
+.catch-title {
+  font-family: "HanziPen TC";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.7rem;
+  line-height: 42px;
+  letter-spacing: -0.03em;
+
+  color: #ffffff;
+
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 4% 4%;
+}
+
+.catch-copy {
+  transform: translate(130px,-20%);
+}
+
+.main-top {
+  background: linear-gradient(
+    180deg,
+    #fdfae2 5.7%,
+    #f8ffcd 65.96%,
+    #fdfae2 109.41%
+  );
+  padding: 120px 0;
+}
+
+.contents-itams-wrapper {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center; /* 横方向の中央揃え */
+  
+}
+.contents-itam .contents-icon {
+  display: flex;
+  justify-content: center;
+}
+
+.contents-title {
+  padding: 16px 0 80px;
+}
+
+.sp-store-wrapper {
+  display: none;
+}
+
+.store-wrapper {
+  display: flex;
+  min-width: 1000px;
+  align-items: center;
+}
+.store-wrapper h3,
+span,
+p {
+  font-family: "02UtsukushiMincho";
+}
+
+.store-content {
+  /* min-width: 600px; */
+  flex-basis: 80%;
+  margin-top: 100px;
+  transform: translateX(80px);
+
+
+}
+
+.side-type {
+  padding: 0 215px;
+}
+
+
+.store-content img {
+  position: absolute;
+  z-index: -10;
+  top: -50px;
+  transform: translateX(42px) scale(1.2);
+
+
+}
+
+.store-content h3 {
+  z-index: 1000;
+  font-size: 26px;
+  color: #6d821e;
+  line-height: 1em;
+  transform: translate(16px, -22px);
+}
+
+.store-content h3 span {
+  font-size: 34px;
+}
+
+.store-text {
+flex-basis: 80%;
+  margin-top: 10px;
+}
+.content-reverse .store-text{
+  width: 464px;
+
+
+}
+
+.store-content p {
+  word-wrap: break-word;
+
+  font-family: "YuKyokasho";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 240%;
+  padding-right: 4%;
+
+  letter-spacing: 0.31em;
+
+  color: #67571c;
+}
+
+
+
+.store-itam img {
+  /* zoom: 1.2; */
+  width: 80%;
+  border-radius: 50%;
+  height: auto;
+  transform: translateX(40px);
+}
+
+.content-reverse {
+flex-direction: row-reverse;
+  padding-bottom: 100px;
+}
+
+.content-reverse .strore-left {
+  transform: translate(-40px ,40px);
+  
+}
+
+.content-reverse .strore-left img {
+  transform: translateX(-120px) scale(1.2);
+}
+
+.content-reverse .store-text {
+  transform: translateX(-40px);
+}
+
+.content-reverse .store-text p{
+  word-wrap: break-word;
+
+  font-family: "YuKyokasho";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 240%;
+
+  letter-spacing: 0.31em;
+
+  color: #67571c;
+}
+
+
+
+.content-reverse .store-itam img{
+  zoom: 3;
+  transform: translate(28px, 30px);
+}
+
+/* about-item */
+
+.about-item {
+  padding-top: 120px;
+  background-color: #FBFAEE;
+  padding-bottom: 80px; 
+}
+
+.shop {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 80px;
+}
+
+.detail {
+  padding: 160px 70px 0 0;
+  /* background-color: red; */
+}
+
+.detail h3 {
+  font-family: "02UtsukushiMincho";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 35px;
+  /* ボックスの高さと同一 */
+  white-space: nowrap;
+
+  color: #67571c;
+  padding-bottom: 18px;
+}
+.detail h4 {
+  font-family: "aoharu-marker-mini";
+  padding-bottom: 42px;
+  border-bottom: 1px solid #dbdbdb;
+  margin-bottom: 32px;
+}
+
+.price {
+  font-family: "02UtsukushiMincho";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  /* ボックスの高さと同一 */
+  color: #67571c;
+  padding: 0 0 124px 148px;
+}
+
+.price span {
+  font-size: 32px;
+}
+.sp-shop {
+  display: none;
+}
+
+.show-items {
+  position: relative;
+}
+
+.product_image {
+  min-width: 340px;
+  height: 450px;
+  border-radius: 5%;
+}
+.product_image img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5%;
+}
+.gensen {
+  position: absolute;
+  bottom: -80px;
+  right: calc(89px - 215px);
+}
+
+/* TODO:bto */
+
+.detail button {
+  background-color: rgba(206, 209, 62, 0.8);
+  border-radius: 15px;
+  width: 348px;
+  height: 94px;
+  border: none;
+  color: #fdfae2; /* ボタンのテキスト色 */
+  padding-bottom: 16px;
+  text-align: center; /* ボタンのテキストを中央に配置 */
+  text-decoration: none; /* テキストの下線を消す */
+  display: inline-block;
+  font-size: 28px;
+  cursor: pointer; /* ボタンにカーソルを合わせたときの形状を変更 */
+  font-family: "02UtsukushiMincho";
+  font-weight: bolder;
+}
+
+.arrow {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%; /* 円形にする */
+  border: 3px solid #fdfae2;
+  cursor: pointer;
+  display: inline-block;
+  transform: translate(15px, 7px);
+}
+.arrow:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: calc(50% - 5px);
+  transform: translate(0%, -50%) rotate(45deg); /* 回転と位置の調整 */
+  width: 10px;
+  height: 10px;
+  border-right: 3px solid #fdfae2; /* 矢印の太さと色 */
+  border-top: 3px solid #fdfae2;
+}
+
+/* TODO: recipe */
+
+.sp-contents-title {
+  display: none;
+}
+
+.recipe-top{
+  padding-top: 120px;
+  background: linear-gradient(
+    180deg,
+    #fdfae2 5.7%,
+    #f8ffcd 65.96%,
+    #fdfae2 109.41%
+  );
+}
+.recipe-text {
+  line-height: 2rem;
+}
+.recipe-text p {
+  text-align: center;
+  word-wrap: break-word;
+  font-family: "YuKyokasho";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 240%;
+  letter-spacing: 0.31em;
+  color: #67571c;
+}
+.recipe-contents {
+  margin-top: 100px;
+  min-width: 915px;
+  position: relative;
+}
+.recipe-contents h4 {
+  font-family: "aoharu-marker-mini";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  padding-bottom: 16px;
+  color: #67571C;
+}
+.recipe-img {
+  width: 590px;
+  height: 395px;
+}
+.recipe-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.recipe-description {
+  background-color: rgba(255, 255, 255, 0.7);
+  width: 500px;
+  height: 295px;
+  position: absolute;
+  top: 80px;
+  right: 0;
+  padding: 70px 10px;
+  box-sizing: border-box;
+}
+.recipe-description::before {
+  content: "";
+  position: absolute;
+  top: -15px;
+  left: 34%;
+  background-color: #9CC203;
+  width: 140px;
+  height: 40px;
+  transform: rotate(10deg);
+}
+.recipe-description h5 {
+  font-family: "YuKyokasho";
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 30px;
+  box-sizing: border-box;
+  letter-spacing: 0.1em;
+  color: #67571C;
+
+}
+.recipe-description p {
+  font-family: "YuKyokasho";
+  font-size: 15px;
+  text-align: center;
+  font-weight: 300;
+  line-height: 2rem;
+  letter-spacing: 0.1em;
+  /* opacity: 0.6; */
+  color: #67571C;
+}
+
+.recipe-description .before{
+  transform: translateX(-25px);
+  display: inline-block;
+  opacity: 0.6;
+}
+.recipe-description .after{
+  transform: translateX(15px);
+  display: inline-block;
+  opacity: 0.6;
+}
+
+
+
+.back-color{
+width: 100%;
+height: 600px;
+}
+.recipe-contents-reverse{
+ position: relative;
+ margin-top: 100px;
+}
+
+.recipe-description-reverse{
+  background-color: rgba(255, 255, 255, 0.7);
+  width: 500px;
+  height: 295px;
+  padding: 70px 10px;
+  box-sizing: border-box;
+  object-position: 0.6;
+  z-index: 20;
+  top: 80px;
+
+  position: absolute;
+}
+
+.recipe-description-reverse::before {
+  content: "";
+  position: absolute;
+  top: -15px;
+  left: 34%;
+  background-color: #9CC203;
+  width: 140px;
+  height: 40px;
+  transform: rotate(-10deg);
+}
+.recipe-description-reverse p{
+  font-family: "YuKyokasho";
+  font-size: 15px;
+  text-align: center;
+  font-weight: 300;
+  line-height: 2rem;
+  letter-spacing: 0.1em;
+  /* opacity: 0.6; */
+  color: #67571C;
+}
+
+.sp-recipe-item {
+  display: none;
+}
+
+.recipe-description-reverse h5 {
+  font-family: "YuKyokasho";
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 30px;
+  box-sizing: border-box;
+  letter-spacing: 0.1em;
+  color: #67571C;
+}
+
+.recipe-contents-reverse .img-contents{
+  z-index: 0;
+  position: absolute;
+  top: 0px;
+  right: 0;
+}
+.recipe-contents-reverse .img-contents h4{
+  font-family: "aoharu-marker-mini";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  text-align: right;
+  padding-bottom: 16px;
+
+}
+
+
+
+.recipe-btn{
+  display: flex;
+  justify-content: center;
+  margin-top: -60px;
+  padding-bottom: 100px;
+}
+.recipe-btn button{
+  background-color: rgba(206, 209, 62, 0.8);
+  border-radius: 15px;
+  width: 348px;
+  height: 94px;
+  border: none;
+  color: #fdfae2; 
+  padding-bottom: 16px;
+  text-align: center; 
+  text-decoration: none; 
+  display: inline-block;
+  font-size: 28px;
+  cursor: pointer; 
+  font-family: "02UtsukushiMincho";
+  font-weight: bolder;
+}
+
+/*
+右から左へ
+----------------------------*/
+@keyframes infinity-scroll-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.d-demo {
+  background-color: #FBFAEE;
+}
+
+.d-demo__wrap {
+  display: flex;
+  overflow: hidden;
+}
+
+.d-demo__list {
+  display: flex;
+  list-style: none;
+  gap: 0 60px;
+  margin-right: 60px;
+}
+
+.d-demo__list--left{
+animation :infinity-scroll-left 65s infinite linear 0.5s both;
+}
+
+.d-demo__item {
+  width: 441px;
+  height: 294px;
+}
+.d-demo__item > img{
+   width: 100%;
+}
+
+
+.line-up-title {
+  text-align: center;
+  padding: 80px 0 16px;
+  font-size: 24px;
+  color: #67571C;
+  font-family: "02UtsukushiMincho";
+
+
+}
+
+.line-up-sub_title{
+  text-align: center;
+  font-size: 16px;
+  color: #67571C;
+  font-family: "aoharu-marker-mini";
+  display: block;
+
+}
+.line-up p{
+  text-align: center;
+  font-size: 16px;
+  color: #67571C;
+  font-family: "YuKyokasho";
+  line-height: 42px;
+  letter-spacing: -0.03em;
+
+}
+
+.line-up_text {
+  padding-top: 24px;
+
+}
+
+.line-up_text-end {
+  padding-bottom: 100px;
+}
+.footer-back {
+  background-image: linear-gradient(180deg, #FDFAE2 5.7%, #F8FFCD 65.96%, #FDFAE2 109.41%);
+
+}
+
+.footer-logo {
+  text-align: center;
+  padding-top: 100px;
+}
+
+.footer-logo img {
+  width: 224px;
+}
+
+.footer-sns{
+  padding-top: 30px;
+  display: flex;
+  justify-content: center;
+  color: #67571C;
+}
+
+.icon {
+  padding-left: 30px;
+  border: none;
+  width: 20px;
+  height: 20px;
+  color: #67571C;
+}
+
+.footer-nav li{
+  color: #67571C;
+  
+}
+.footer-nav .group1 {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 30px;
+  gap: 0 66px;
+}
+.footer-nav .group2 {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 120px;
+  gap: 0 30px;
+
+}
+
+.footer-nav a{
+  color: #67571C;
+  text-decoration: none;
+  font-family: "YuKyokasho";
+
+}
+
+.footer-nav li:nth-child(5n) {
+  margin-right: 0;
+}
+
+.footer-nav:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+
+.sp-text-box {
+  display: none;
+}
+
+
+
+
+
