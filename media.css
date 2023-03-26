@@ -1,0 +1,619 @@
+@media screen and (max-width: 480px) {
+  * {
+    /* border: 2px solid skyblue !important; */
+    box-sizing: border-box;
+  }
+
+  .header-container {
+    display: none;
+  }
+
+  .sp-header-container {
+    display: block;
+    background-color: rgba(245, 245, 245, 0.8);
+    padding: 0 10px 0 20px;
+    box-sizing: border-box;
+    position: fixed;
+    width: 100%;
+    z-index: 99999;
+  }
+
+  .sp-header-logo{
+    width: 168px;
+    transform: translateY(-20px);
+  }
+  .sp-header-logo img{
+    width: 100%;
+  }
+
+  .side-type {
+    padding: 0 16px;
+    box-sizing: border-box;
+  }
+
+  #header {
+    background-image: url(img/header/sp-first_view.png);
+    background-size: cover;
+    width: 100%;
+    height: 864px;
+  }
+
+  .catch-img {
+    display: block;
+    padding-top: 85px;
+  }
+
+  .catch-text {
+    padding-top: 220px;
+  }
+  .catch-text .title img {
+  }
+
+  .catch-title {
+    display: none;
+  }
+
+  .sp-catch-title {
+    display: block;
+    width: 68%;
+    font-family: "HanziPen TC";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.4rem;
+    font-size: 20px;
+    color: #ffffff;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  .catch-copy {
+    display: none;
+  }
+
+  .sp-catch-img-wrapper {
+    display: flex;
+    justify-content: right;
+  }
+  .sp-catch-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: rgba(251, 251, 251, 0.6);
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    position: relative;
+  }
+  .sp-catch-img:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 38px;
+    height: 50px;
+    top: 65%;
+    right: 5%;
+    background-image: url(img/header/cup.png);
+  }
+
+  .sp-catch-img p {
+    text-align: center;
+    line-height: 2rem;
+    font-family: "YuKyokasho";
+    color: #936969;
+    letter-spacing: 1px;
+    font-size: 21px;
+  }
+
+  .contents-itam {
+    padding-top: 80px;
+  }
+
+  .store-wrapper {
+    display: none;
+  }
+
+  .sp-store-wrapper {
+    display: block;
+  }
+
+  .sp-store-wrapper h3,
+  span,
+  p {
+    font-family: "02UtsukushiMincho";
+  }
+
+  .sp-store-content img {
+    z-index: -10;
+    top: -50px;
+    /* transform: translateX(42px) scale(1.2); */
+    zoom: 1.4;
+  }
+
+  .sp-store-content h3 {
+    z-index: 1000;
+    font-size: 20px;
+    color: #6d821e;
+    line-height: 1em;
+    transform: translate(0px, -38px);
+    text-align: center;
+  }
+
+  .sp-store-content h3 span {
+    font-size: 24px;
+  }
+
+  .shop {
+    display: none;
+  }
+
+  .sp-store-text {
+    padding: 34px 20px 50px;
+    line-height: 240%;
+    /* または240% */
+    font-size: 15px;
+    color: #67571c;
+  }
+
+  .main-top {
+    padding: 0;
+  }
+
+  .contents-itam {
+    padding-top: 50px;
+  }
+
+  .sp-store-itam img {
+    border-radius: 50%;
+    padding-top: 9px;
+  }
+  .sp-shop {
+    display: block;
+  }
+
+  .sp-product_image {
+    display: flex;
+  }
+  .sp-product_image img {
+    width: 358px;
+    height: 493px;
+    /* object-fit: cover;
+    object-position: center; */
+  }
+
+  .sp-detail h3 {
+    padding-top: 48px;
+    font-family: "02UtsukushiMincho";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 35px;
+    /* ボックスの高さと同一 */
+    white-space: nowrap;
+
+    color: #67571c;
+  }
+
+  .sp-detail h4 {
+    font-size: 16px;
+    font-family: "aoharu-marker-mini";
+    padding: 14px 0 18px;
+    border-bottom: 1px solid #dbdbdb;
+    margin-bottom: 26px;
+  }
+
+  .sp-price {
+    font-family: "02UtsukushiMincho";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    /* ボックスの高さと同一 */
+    color: #67571c;
+    text-align: right;
+    padding-bottom: 20px;
+  }
+
+  .sp-detail span {
+    font-size: 28px;
+  }
+  .sp-detail {
+    text-align: right;
+  }
+
+  .sp-detail button {
+    background-color: rgba(206, 209, 62, 0.8);
+    border-radius: 15px;
+    width: 348px;
+    height: 94px;
+    border: none;
+    color: #fdfae2; /* ボタンのテキスト色 */
+    padding-bottom: 16px;
+    text-align: center; /* ボタンのテキストを中央に配置 */
+    text-decoration: none; /* テキストの下線を消す */
+    display: inline-block;
+    font-size: 28px;
+    cursor: pointer; /* ボタンにカーソルを合わせたときの形状を変更 */
+    font-family: "02UtsukushiMincho";
+    font-weight: bolder;
+  }
+
+  .sp-arrow {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%; /* 円形にする */
+    border: 3px solid #fdfae2;
+    cursor: pointer;
+    display: inline-block;
+    transform: translate(15px, 7px);
+  }
+  .sp-arrow:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: calc(50% - 5px);
+    transform: translate(0%, -50%) rotate(45deg); /* 回転と位置の調整 */
+    width: 10px;
+    height: 10px;
+    border-right: 3px solid #fdfae2; /* 矢印の太さと色 */
+    border-top: 3px solid #fdfae2;
+  }
+
+  /* .contents-title {
+    display: none;
+  } */
+  .recipe-top {
+    padding-top: 80px;
+  }
+  .recipe-contents {
+    margin-top: 100px;
+    min-width: 0px;
+    position: relative;
+  }
+  .recipe-contents h4 {
+    font-family: "aoharu-marker-mini";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    padding-bottom: 16px;
+    letter-spacing: -0.12em;
+  }
+  .contents-title-recipe-pc {
+    display: none;
+  }
+
+  .sp-contents-title {
+    display: block;
+    width: 303px;
+    height: auto;
+    padding-bottom: 64px;
+  }
+  .recipe-img {
+    width: 375px;
+    height: 207px;
+  }
+  .recipe-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .recipe-description {
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 308px;
+    height: 167px;
+    position: relative;
+    top: -60px;
+    left: 24%;
+    /* padding: 70px opx; */
+    /* box-sizing: border-box; */
+  }
+  .recipe-description::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 40%;
+    background-color: #9cc203;
+    width: 85px;
+    height: 22px;
+    transform: rotate(10deg);
+  }
+  .recipe-description h5 {
+    font-family: "YuKyokasho";
+    font-size: 16px;
+    text-align: center;
+    /* margin-bottom: 30px; */
+    /* box-sizing: border-box; */
+    letter-spacing: 0.1em;
+    color: #67571c;
+    transform: translateY(-40px);
+  }
+  .sp-recipe-item {
+    display: block;
+  }
+  .sp-recipe-item p {
+    font-family: "YuKyokasho";
+    font-size: 9px;
+    text-align: center;
+    font-weight: 300;
+    line-height: 1.5rem;
+    letter-spacing: 0.1em;
+    color: #67571c;
+    transform: translateY(-50px);
+    padding: 0 10px;
+  }
+
+  .recipe-item {
+    display: none;
+  }
+
+  .recipe-description .before {
+    transform: translateX(-25px);
+    display: inline-block;
+    opacity: 0.6;
+  }
+  .recipe-description .after {
+    transform: translateX(15px);
+    display: inline-block;
+    opacity: 0.6;
+  }
+
+  .recipe-description-reverse {
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 308px;
+    height: 167px;
+    padding: 70px 10px;
+    box-sizing: border-box;
+    object-position: 0.6;
+    z-index: 20;
+    top: 80px;
+    right: 24%;
+  }
+
+  .recipe-description-reverse::before {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: 34%;
+    background-color: #9cc203;
+    width: 85px;
+    height: 22px;
+    transform: rotate(-10deg);
+  }
+  .recipe-description-reverse p {
+    font-family: "YuKyokasho";
+    font-size: 9px;
+    text-align: center;
+    font-weight: 300;
+    line-height: 1.5rem;
+    letter-spacing: 0.1em;
+    color: #67571c;
+    transform: translateY(-50px);
+    padding: 0 10px;
+  }
+  .recipe-description-reverse h5 {
+    font-family: "YuKyokasho";
+    font-size: 16px;
+    text-align: center;
+    /* margin-bottom: 30px; */
+    /* box-sizing: border-box; */
+    letter-spacing: 0.1em;
+    color: #67571c;
+    transform: translateY(-40px);
+  }
+
+  .img-contents h4 {
+    font-family: "aoharu-marker-mini";
+    font-style: normal;
+    letter-spacing: -0.12em;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: right;
+    padding-bottom: 16px;
+    color: #67571c;
+    padding-right: 16px;
+  }
+
+  .img-contents {
+    transform: translateY(-100px);
+  }
+
+  .recipe-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+    padding-bottom: 100px;
+  }
+
+  .back-color {
+    width: 100%;
+    height: 300px;
+  }
+  .text-box {
+    display: none;
+  }
+  .sp-text-box {
+    padding: 30px 40px;
+    display: block;
+  }
+  .sp-text-box p {
+    font-size: 14px;
+  }
+
+  .line-up-title {
+    text-align: center;
+    padding: 80px 0 16px;
+    font-size: 20px;
+    color: #67571c;
+    font-family: "02UtsukushiMincho";
+  }
+
+  .footer-logo {
+    padding-top: 40px;
+  }
+
+  .footer-sns {
+    display: flex;
+    justify-content: center;
+  }
+  .footer-sns .icon {
+    width: 70px;
+    height: 30px;
+  }
+  .footer-sns img {
+    width: 20px;
+    height: 20px;
+  }
+  .footer-nav .group1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    gap: 0 10px;
+    font-size: 12px;
+  }
+  .footer-nav .group2 {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 12px;
+
+    justify-content: center;
+    padding-bottom: 120px;
+    gap: 0 10px;
+    margin-bottom: 100px;
+  }
+
+  /*----------------------------
+* メニュー開閉ボタン
+*----------------------------*/
+  .menu-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 2;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /*----------------------------
+* メニュー本体
+*----------------------------*/
+  .menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(246, 246, 246, 0.9);
+    left: 0;
+  }
+  .menu__item {
+    width: 100%;
+    height: auto;
+    padding: 0.5em 1em;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    box-sizing: border-box;
+    margin-bottom: 25px;
+  }
+  .menu__item a li{
+    list-style:none;
+    content:none;
+  }
+
+  /*----------------------------
+* アニメーション部分
+*----------------------------*/
+
+  /* アニメーション前のメニューの状態 */
+  .menu {
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.3s linear;
+  }
+  /* アニメーション後のメニューの状態 */
+  .menu.is-active {
+    pointer-events: auto;
+    opacity: 1;
+    transform: translateY(-100px);
+  }
+
+  .catch-side {
+    padding: 0 16px;
+    box-sizing: border-box;
+  }
+
+  /*==================================================
+　5-2-1 3本線が×に
+===================================*/
+
+.humber-menu{
+  display: flex;
+  justify-content: right;
+
+}
+  .openbtn {
+    position: relative;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+  }
+
+  /*ボタン内側*/
+  .openbtn span {
+    display: inline-block;
+    transition: all 0.4s; /*アニメーションの設定*/
+    position: absolute;
+    left: 14px;
+    height: 3px;
+    border-radius: 2px;
+    background: #c787427c;
+    width: 80%;
+  }
+
+  .openbtn span:nth-of-type(1) {
+    top: 12px;
+  }
+
+  .openbtn span:nth-of-type(2) {
+    top: 23px;
+  }
+
+  .openbtn span:nth-of-type(3) {
+    top: 34px;
+  }
+
+  /*activeクラスが付与されると線が回転して×に*/
+
+  .openbtn.active span:nth-of-type(1) {
+    top: 18px;
+    left: 18px;
+    transform: translateY(6px) rotate(-45deg);
+    width: 70%;
+
+  }
+
+  .openbtn.active span:nth-of-type(2) {
+    opacity: 0; /*真ん中の線は透過*/
+  }
+
+  .openbtn.active span:nth-of-type(3) {
+    top: 30px;
+    left: 18px;
+    transform: translateY(-6px) rotate(45deg);
+    width: 70%;
+
+  }
+}
